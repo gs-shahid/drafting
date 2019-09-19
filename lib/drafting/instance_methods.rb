@@ -1,7 +1,7 @@
 module Drafting
   module InstanceMethods
     def save_draft(user=nil)
-      return false unless self.new_record?
+      # return false unless self.new_record?
 
       draft = Draft.find_by_id(self.draft_id) || Draft.new
 
